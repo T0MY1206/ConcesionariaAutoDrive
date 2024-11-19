@@ -1,0 +1,135 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1e293b;
+    color: white;
+    padding: 10px 0;
+}
+
+header .menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+header .menu li {
+    margin: 0 15px;
+}
+
+header .menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header .menu a:hover {
+    text-decoration: underline;
+}
+
+.home-section {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to right, #0ea5e9, #3b82f6);
+    color: white;
+}
+
+.autos-section {
+    padding: 20px;
+    background: #f8fafc;
+}
+
+.auto-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border: 1px solid #e5e7eb;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 250px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.reseñas-section {
+    padding: 20px;
+    background: #f1f5f9;
+}
+
+.reseña-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.reseña {
+    background: white;
+    padding: 15px;
+    border: 1px solid #e5e7eb;
+    border-radius: 5px;
+}
+
+.contacto-section {
+    padding: 20px;
+    text-align: center;
+    background: #e5e7eb;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form label {
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+}
+
+form button {
+    background-color: #1e293b;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #3b82f6;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #1e293b;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .auto-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
